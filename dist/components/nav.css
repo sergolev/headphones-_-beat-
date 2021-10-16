@@ -1,0 +1,38 @@
+.site-nav {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+}
+.site-nav .site-nav__item {
+  display: inline-block;
+  margin-right: 1.5625rem;
+}
+.site-nav .site-nav__item .site-nav__link {
+  text-decoration: none;
+  align-items: center;
+  transition: 0.3s;
+  font-size: 1.125rem;
+  color: #292929;
+}
+.site-nav .site-nav__item .site-nav__link:hover {
+  color: #E01F3D;
+}
+
+.site-nav-laptop{
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .site-nav {
+  display: none;
+  }
+
+  .site-nav-laptop{
+  display: block;
+  
+}
+
+}
+
+/*# sourceMappingURL=nav.css.map */

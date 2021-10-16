@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+.order {
+  background-image: url("../../img/cta.png");
+  background-size: 100% 100%;
+  background-position: center;
+}
+.order .order__container {
+  padding: 4.25rem 0 5.3125rem 0;
+}
+.order .order__container .order__title {
+  color: #FFFFFF;
+}
+.order .order__container .order__form {
+  margin-top: 3.75rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+.order .order__container .order__form .order__form_inputs {
+  width: 28.875rem;
+}
+.order .order__container .order__form .order__form_inputs .order__form_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.order .order__container .order__form .order__form_inputs .order__form_flex .order__form_name, .order .order__container .order__form .order__form_inputs .order__form_flex .order__form_phone {
+  width: 13.9375rem;
+}
+.order .order__container .order__form .order__form_inputs .order__form_flex .order__form_house, .order .order__container .order__form .order__form_inputs .order__form_flex .order__form_floor, .order .order__container .order__form .order__form_inputs .order__form_flex .order__form_frame, .order .order__container .order__form .order__form_inputs .order__form_flex .order__form_apartment {
+  width: 6.625rem;
+}
+.order .order__container .order__form .order__form_block {
+  width: 28.125rem;
+}
+.order .order__container .order__form .order__form_block .order__form_radios {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.order .order__container .order__form .order__form_block .order__form_radios label {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+.order .order__container .order__form .order__form_block .order__form_radios label .order__form_radio {
+  display: none;
+}
+.order .order__container .order__form .order__form_block .order__form_radios span {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  display: inline-block;
+  background: #FFFFFF;
+  position: relative;
+  border-radius: 50%;
+  margin-right: 0.625rem;
+}
+.order .order__container .order__form .order__form_block .order__form_checkbox input {
+  display: none;
+}
+.order .order__container .order__form .order__form_block .order__form_checkbox span {
+  width: 1.4375rem;
+  height: 1.4375rem;
+  display: inline-block;
+  background: #FFFFFF;
+  position: relative;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.order .order__container .order__form .order__form_block .order__form_checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.order .order__container .order__form .order__form_block .order__form_actions {
+  margin-top: 2.75rem;
+  display: flex;
+  align-items: center;
+}
+.order .order__container .order__form .order__form_block .order__form_actions .order__form_action.send__button {
+  margin-right: 0.9375rem;
+  padding: 1.25rem;
+}
+.order .order__container .order__form .order__form_block .order__form_actions .order__form_action.clear__button {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  font-family: "PlayRegular", sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.order .order__container label {
+  font-family: "PlayRegular", sans-serif;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #FFFFFF;
+}
+.order .order__container label .order__form_input {
+  width: 100%;
+  margin-top: 0.375rem;
+  margin-bottom: 0.875rem;
+  padding: 1.0625rem 1.25rem;
+  box-sizing: border-box;
+  border: 0.1875rem solid transparent;
+  border-radius: 0.25rem;
+  outline: 0;
+  transition: 0.3s;
+}
+.order .order__container label .order__form_input:focus, .order .order__container label .order__form_input:active {
+  border: 0.1875rem solid #E01F3D;
+}
+.order .order__container label .order__form_textarea {
+  width: 100%;
+  height: 9.6875rem;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  border: 0.1875rem solid transparent;
+  border-radius: 0.25rem;
+  outline: none;
+  margin-bottom: 2.25rem;
+  resize: none;
+  transition: 0.3s;
+  margin-top: 0.375rem;
+}
+.order .order__container label .order__form_textarea:focus, .order .order__container label .order__form_textarea:active {
+  border: 0.1875rem solid #E01F3D;
+}
+
+.order__form_radio:checked + span::before {
+  /* <-- ставим иконку, когда чекбокс включен  */
+  content: "";
+  position: absolute;
+  display: block;
+  top: calc(50% - 0.40625rem);
+  left: calc(50% - 0.40625rem);
+  background: #E01F3D;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border-radius: 50%;
+}
+
+.order__form_checkbox input:checked + span::before {
+  /* <-- ставим иконку, когда чекбокс включен  */
+  content: url("../../img/vector.svg");
+  position: absolute;
+  top: 0;
+  left: 0.4375rem;
+}
+
+@media (max-width: 950px) {
+
+  .order .order__container .order__title{
+    text-align: center;
+  }
+
+  .order .order__container .order__form{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order .order__container .order__form .order__form_block .order__form_actions{
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .order .order__container{
+    padding: 87px 0 81px 0;
+  }
+
+  .order .order__container label .order__form_input{
+    margin-top: 5px;
+    margin-bottom: 16px;
+    padding: 8px 10px;
+  }
+
+  .order .order__container label .order__form_textarea{
+    margin-top: 3px;
+    margin-bottom: 32px;
+    height: 82px;
+  }
+
+  .order .order__container .order__form .order__form_inputs{
+    width: 95%;
+  }
+
+  .order .order__container .order__form .order__form_block .order__form_radios{
+    justify-content: center;
+  }
+
+  .order .order__container .order__form .order__form_block .order__form_checkbox {
+    display: flex;
+    justify-content: center;
+  }
+
+  .order .order__container .order__form .order__form_block .order__form_actions{
+    margin-top: 36px;
+  }
+
+  .order .order__container .order__form .order__form_block{
+    width: 95%;
+  }
+
+  .order .order__container .order__form .order__form_inputs .order__form_flex .order__form_name, .order .order__container .order__form .order__form_inputs .order__form_flex .order__form_phone{
+    max-width: 95%;
+  }
+
+}
+
+/*# sourceMappingURL=order.css.map */

@@ -1,0 +1,110 @@
+@font-face {
+  src: url("../../fonts/AlegreyaSans-Regular.ttf");
+  font-family: "AlegreyaSansRegular";
+}
+@font-face {
+  src: url("../../fonts/playbold.ttf");
+  font-family: "PlayBold";
+}
+@font-face {
+  src: url("../../fonts/playregular.ttf");
+  font-family: "PlayRegular";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "AlegreyaSansRegular", sans-serif;
+  background: #FFFFFF;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 58.75rem;
+  margin: 0 auto;
+}
+
+.wrapper_main {
+  background-color: #F5F5F5;
+}
+
+.main__container {
+  max-width: 57.1875rem;
+  position: relative;
+}
+.main__container .main__rectangle {
+  width: 2.895rem;
+  height: 0.64875rem;
+  background: #C4C4C4;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: -0.25rem;
+  right: 1.5625rem;
+  z-index: 10;
+}
+
+.advantages__container {
+  max-width: 57.1875rem;
+}
+
+.section__title {
+  font-family: "PlayBold", sans-serif;
+  font-size: 3rem;
+  line-height: 3.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+@media (max-width: 768px){
+
+  .container{
+    max-width: 768px;
+  }
+
+  .main__container .main__rectangle{
+    width: 46.32px;
+    height: 10.38px;
+    right: 0;
+    left: 80%;
+    background: #858585;
+  }
+
+  .section__title{
+    max-width: 575px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px){
+
+  .container{
+    max-width: 480px;
+  }
+
+  .advantages .advantages__container{
+    padding: 283px 0 257px 0;
+  }
+
+  .section__title{
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+}
+
+/*# sourceMappingURL=layout.css.map */

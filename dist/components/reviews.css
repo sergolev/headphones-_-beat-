@@ -1,0 +1,193 @@
+.reviews {
+  background: #FFFFFF;
+}
+.reviews .reviews__container {
+  padding: 4rem 0;
+  position: relative;
+}
+.reviews .reviews__container .reviews__title {
+  position: relative;
+  z-index: 5;
+}
+.reviews .reviews__container .review {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  background: #F8FAF9;
+  padding: 2.625rem;
+  position: relative;
+}
+.reviews .reviews__container .review .review__image {
+  max-width: 15.8125rem;
+  margin-right: 2.5rem;
+}
+.reviews .reviews__container .review .review__description {
+  max-width: 29.375rem;
+}
+.reviews .reviews__container .review .review__description .review__title {
+  font-family: "PlayBold", sans-serif;
+  font-size: 1.5rem;
+  color: #292929;
+  margin-bottom: 1.6875rem;
+}
+.reviews .reviews__container .review .review__description .review__text {
+  font-family: "PlayRegular", sans-serif;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #666666;
+}
+.reviews .reviews__container .review .review__description .review__author {
+  font-family: "PlayBold", sans-serif;
+  font-size: 1.125rem;
+  color: #292929;
+  margin-top: 2.375rem;
+}
+.reviews .reviews__container .review .review__circle {
+  width: 5.1875rem;
+  height: 5.1875rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -3.8125rem;
+  left: calc(50% - 2.59375rem);
+  background: #FFFFFF;
+}
+.reviews .reviews__container .review__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.9375rem;
+}
+.reviews .reviews__container .review__nav .review__nav_item {
+  width: 4.625rem;
+  height: 4.625rem;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  margin-right: 0.375rem;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.reviews .reviews__container .review__nav .review__nav_item:last-child {
+  margin-right: 0;
+}
+.reviews .reviews__container .review__nav .review__nav_item .review__nav_item_border {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4.625rem;
+  height: 4.625rem;
+  border-radius: 50%;
+  border: 0.25rem solid transparent;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.reviews .reviews__container .review__nav .review__nav_item:hover .review__nav_item_border, .reviews .reviews__container .review__nav .review__nav_item.review__nav_item_active .review__nav_item_border {
+  border: 0.25rem solid #E01F3D;
+}
+.reviews .reviews__container .reviews__circle {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  position: absolute;
+  bottom: -1.09375rem;
+  left: 0;
+  background: #868686;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+@media (max-width: 950px) {
+
+  .reviews .reviews__container .reviews__circle{
+    left: 7%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .reviews .reviews__container{
+    padding: 180px 0;
+  }
+
+  .reviews .reviews__container .review{
+    max-width: 724px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+    padding-top: 89px;
+    padding-bottom: 47px;
+  }
+
+  .reviews .reviews__container .review .review__image{
+    margin-right: 0;
+    margin-bottom: 32px;
+    max-width: 130px;
+  }
+
+  .reviews .reviews__container .review .review__description{
+    max-width: 677px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .reviews .reviews__container .review .review__description .review__title{
+    text-align: center;
+  }
+
+  .reviews .reviews__container .review .review__description .review__text{
+    text-align: center;
+  }
+
+  .reviews .reviews__container .review__nav{
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews .reviews__container .reviews__circle{
+    left: 68px;
+  }
+
+  .reviews .reviews__container .review .review__circle{
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .reviews .reviews__container{
+    padding-top: 96px;
+    padding-bottom: 67px;
+  }
+
+  .reviews .reviews__container .review{
+    margin-top: 26px;
+    padding-top: 56px;
+    padding-bottom: 33px;
+  }
+
+  .reviews .reviews__container .review .review__image{
+    margin-bottom: 21px;
+  }
+
+  .reviews .reviews__container .review .review__description{
+    max-width: 405px;
+  }
+
+  .reviews .reviews__container .review .review__description .review__title{
+    margin-bottom: 12px;
+  }
+
+  .reviews .reviews__container .review .review__description .review__author{
+    margin-top: 12px;
+  }
+
+  .reviews .reviews__container .review__nav{
+    margin-top: 44px;
+  }
+
+}
+/*# sourceMappingURL=reviews.css.map */

@@ -1,0 +1,16 @@
+.map {
+  background-image: url("../../img/map.png");
+  background-position: center;
+  background-size: cover;
+  height: 40.75rem;
+}
+
+@media (max-width: 768px){
+
+  .map{
+    height: 526px;
+  }
+
+}
+
+/*# sourceMappingURL=map.css.map */
